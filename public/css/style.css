@@ -12,7 +12,7 @@
   width: 100%;
   min-height: 100vh;
   transition: all .6s ease-in-out;
-  overflow-x: hidden; }
+  overflow: clip; }
   .wrapper .wrapper__header {
     width: 100%;
     height: 90px;

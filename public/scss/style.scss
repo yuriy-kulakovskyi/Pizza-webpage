@@ -21,7 +21,7 @@ $red: #CB193F;
   width: 100%;
   min-height: 100vh;
   transition: all .6s ease-in-out;
-  overflow-x: hidden;
+  overflow: clip;
 
 // Import all styles
 @import "header";
