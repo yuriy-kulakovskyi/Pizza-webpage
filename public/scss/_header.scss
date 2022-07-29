@@ -2,7 +2,8 @@
 .wrapper__header {
   width: 100%; height: 90px;
   position: sticky;
-  top: 0; left: 0;
+  align-self: flex-start;
+  top: 0;
   @include flexSpaceBetween-center();
   z-index: 2;
   box-shadow: 0 0 4px #333;

@@ -44,8 +44,6 @@ fetch('public/json/faq.json')
   return response.json();
 })
 .then(jsondata => {
-  console.log(jsondata.questions);
-
   for (let i = 0; i < jsondata.questions.length; i++) {
     let questionBlock = document.createElement('div');
 
