@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza and sushi website</title>
+
+  <!-- Shortcut icon -->
+  <link rel="shortcut icon" href="public/img/Burger-button.png">
+
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="public/css/normalize.css">
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/657ceb94fb.js" crossorigin="anonymous"></script>
+
+  <!-- Custom stylesheets -->
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+  <!-- Wrapper for site starts -->
+  <div class="wrapper" id="wrapper">
+
+    <!-- header block -->
+    <header class="wrapper__header" id="header">
+      <div class="light-and-dark-theme">
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+        <i class="fas fa-moon"></i>
+        <i class='fas fa-sun'></i>
+        <div class='ball'></div>
+        </label>
+      </div>
+      <div class="header__burger-btn" id="burger-btn">
+        <img src="public/img/Burger-button.png" alt="Burger button">
+      </div>
+    </header>
+    
+    <!-- Burger menu -->
+    <div class="wrapper__burger-menu" id="menu">
+      <div class="linkVal" id="linkVal"></div>
+      <ul class="items-list">
+        <li class="list-item"><a class="top-today item__link" id="top-today-link">top</a></li>
+        <li class="list-item"><a class="products-link item__link" id="products-link">products</a></li>
+        <li class="list-item"><a class="faq-link item__link" id="faq-link">faq</a></li>
+      </ul>
+    </div>
+
+    <!-- Home section starts -->
+    <section class="home" id="home">
+      <!-- main block -->
+      <main class="home__main">
+        <!-- Logotype -->
+        <div class="main__logo"></div>
+        <!-- Main text  -->
+        <h1 class="main__info">
+          Найсмачніші суші і піца <br> у твоєму місті
+        </h1>
+        <p class="main__subtitle">
+          обирайте страви, які вам подобаються <br> про все інше ми подбаємо
+        </p>
+      </main>
+
+      <!-- footer block -->
+      <footer class="home__footer">
+        <div class="footer__info-wrap">
+          <div class="arrow-down" id="arrow-changeSection">
+            <a href="#top">
+              <img src="public/img/arrow.png" alt="arrow-down" id="arrow-down">
+            </a>
+          </div>
+          <div class="shopping-cart" id="cart">
+            <div class="circle">0</div>
+            <div class="circle-wrap">
+              <img src="public/img/cart.png" alt="Cart" id="cart-img">
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- Top today section starts -->
+    <section class="top after-home" id="top">
+      <!-- header -->
+      <div class="top__header">
+        <h1 class="header__title">найкращі <span class="color">сьогодні</span></h1>
+        <p class="header__subtitle">подивитись найкращі товари за сьогодні</p>
+      </div>
+      <!-- main -->
+      <main class="top__main">
+        <!-- Slider -->
+        <div class="main__slider" id="slider">
+          <!-- Right arrow of slider -->
+          <div class="slider__arrow arrow-left" id="arrow-left">
+            <img src="public/img/long-arrow.png" alt="Arrow">
+          </div>
+
+          <div class="slider__item" id="slider__item">
+            <div class="item__image">
+              <img src="" alt="" id="sliderImg">
+            </div>
+            <div class="item__info">
+              <h1 class="item__title" id="sliderItemName"></h1>
+              <p class="item__description" id="sliderItemDescription"></p>
+              <div class="item__footer">
+                <h3 class="footer__good-price" id="price"><span class="color">10</span>$</h3>
+                <div class="footer__number-of">
+                  <h4 class="number__instrument" id="minus"><span class="color">-</span></h4>
+                  <div class="box-number">
+                    <h4 class="number" id="number-to-change">1</h4>
+                  </div>
+                  <h4 class="number__instrument" id="plus"><span class="color">+</span></h4>
+                </div>
+                <button class="buy" id="buy-btn">Замовити</button>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Left arrow of slider -->
+          <div class="slider__arrow arrow-right" id="arrow-right">
+            <img src="public/img/long-arrow.png" alt="Arrow">
+          </div>
+        </div>
+        <!-- info card of slider -->
+        <div class="main__slider-card"></div>
+      </main>
+    </section>
+    <!-- Top today section ends -->
+
+    <!-- Products section starts -->
+    <section class="products after-home" id="products">
+      <!-- Header of "Products" section -->
+      <div class="products__header">
+        <h1 class="header__logo">Lorem</h1>
+        <nav class="header__nav">
+          <div class="nav__item pizza">
+            <div class="item__image pizza-item">
+              <img src="public/img/pizza-item.png" alt="Pizza">
+            </div>
+            <p class="item__title">Піца</p>
+          </div>
+          <div class="nav__item sushi">
+            <div class="item__image sushi-item">
+              <img src="public/img/sushi.png" alt="Sushi">
+            </div>
+            <p class="item__title">Суші</p>
+          </div>
+          <div class="nav__item burger">
+            <div class="item__image burger-item">
+              <img src="public/img/burger.png" alt="Burger">
+            </div>
+            <p class="item__title">Бургери</p>
+          </div>
+          <div class="nav__item drink">
+            <div class="item__image drink-item">
+              <img src="public/img/drink.png" alt="Drink">
+            </div>
+            <p class="item__title">Напої</p>
+          </div>
+        </nav>
+        <div class="header__city">
+          <div class="city__location-img">
+            <img src="public/img/location.png" alt="Location">
+          </div>
+          <p class="city__name">Львів</p>
+        </div>
+      </div>
+
+      <!-- Main block of "Products" section -->
+      <main class="products__main">
+        <div class="main__list">
+          <div class="list__item">
+            <div class="item__header">
+              <div class="header__product-characteristics">
+                <h4 class="characteristics__weight"><span class="yellow">320</span> гр</h4>
+                <h4 class="characteristics__size">30 гр</h4>
+              </div>
+            </div>
+            <div class="item__image">
+              <img src="public/img/pizza-item.png" alt="Pizza">
+            </div>
+            <div class="item__description">
+              <h1 class="description__title">Піца</h1>
+              <p class="description__composition">соус бешамель, сир моцарела, сир пармезан, <br> сир камамбер, соус песто.</p>
+            </div>
+            <div class="item__footer">
+              <div class="panel">
+                <h3 class="footer__good-price"><span class="yellow">10</span> $</h3>
+                <div class="footer__number-of">
+                  <h4 class="number__instrument"><span class="color">-</span></h4>
+                  <div class="box-number">
+                    <h4 class="number">1</h4>
+                  </div>
+                  <h4 class="number__instrument"><span class="color">+</span></h4>
+                </div>
+                <button class="buy">Замовити</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="list__item">
+            <div class="item__header">
+              <div class="header__product-characteristics">
+                <h4 class="characteristics__weight"><span class="yellow">320</span> гр</h4>
+                <h4 class="characteristics__size">30 гр</h4>
+              </div>
+            </div>
+            <div class="item__image">
+              <img src="public/img/pizza-item.png" alt="Pizza">
+            </div>
+            <div class="item__description">
+              <h1 class="description__title">Піца</h1>
+              <p class="description__composition">соус бешамель, сир моцарела, сир пармезан, <br> сир камамбер, соус песто.</p>
+            </div>
+            <div class="item__footer">
+              <div class="panel">
+                <h3 class="footer__good-price"><span class="yellow">10</span> $</h3>
+                <div class="footer__number-of">
+                  <h4 class="number__instrument"><span class="color">-</span></h4>
+                  <div class="box-number">
+                    <h4 class="number">1</h4>
+                  </div>
+                  <h4 class="number__instrument"><span class="color">+</span></h4>
+                </div>
+                <button class="buy">Замовити</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+    <!-- Products section ends -->
+
+    <!-- Faq sections starts -->
+    <section class="faq after-home" id="faq">
+      <div class="faq__header">
+        <h1 class="header__title" id="faq__title">Найпопулярніші запитання</h1>
+      </div>
+      <div class="faq__questions-block" id="questions"></div>
+    </section>
+    <!-- Faq sections ends -->
+
+  </div>
+  <!-- Wrapper for site ends -->
+
+  <!-- JavaScript -->
+  <script src="public/js/main.js"></script>
+  <script type="module" src="public/js/mousemove-leave.js"></script>
+  <script type="module" src="public/js/click.js"></script>
+  <script type="module" src="public/js/parser.js"></script>
+</body>
+</html>

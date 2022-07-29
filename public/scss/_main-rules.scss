@@ -1,0 +1,17 @@
+// main rules
+img {
+  max-width: 100%;
+}
+
+section {
+  width: 100%; min-height: 100vh;
+  transition: all 1s;
+}
+
+.color {
+  color: $red;
+}
+
+.yellow {
+  color: #ffd600;
+}

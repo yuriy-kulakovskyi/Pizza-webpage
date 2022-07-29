@@ -1,0 +1,106 @@
+// header
+.wrapper__header {
+  width: 100%; height: 90px;
+  position: sticky;
+  top: 0; left: 0;
+  @include flexSpaceBetween-center();
+  z-index: 2;
+  box-shadow: 0 0 4px #333;
+  border-radius: 10px;
+  padding: 40px;
+  background-color: #fcfcfc;
+  margin-bottom: 20px;
+
+  .shopping-cart {
+    width: 85px; height: 96px;
+    margin: -23px 0 0 0;
+    cursor: pointer;
+
+    .circle {
+      width: 25px; height: 25px;
+      background-color: $red;
+      border-radius: 100%;
+      @include flexCenter();
+      color: #fff;
+      font-family: montserrat;
+      position: relative;
+      top: 20px;
+      box-shadow: 0 0 4px #333;
+    }
+
+    .circle-wrap {
+      width: 65px;
+      height: 65px;
+      border-radius: 100%;
+      border: 1px solid #111;
+      @include flexCenter();
+      transition: .6s ease-in-out;
+
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  .light-and-dark-theme {
+    .dark {
+      background-color: #292c35;
+    }
+
+    .checkbox {
+      opacity: 0;
+      position: absolute;
+    }
+
+    .label {
+      width: 50px;
+      height: 26px;
+      background-color: #111;
+      display: flex;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      position: relative;
+      transform: scale(1.5);
+      cursor: pointer;
+      box-shadow: 0 0 10px $red;
+    }
+
+    .ball {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      border-radius: 50%;
+      transition: transform 0.2s linear;
+    }
+
+    /*  target the elemenent after the label*/
+    .checkbox:checked+.label .ball {
+      transform: translateX(24px);
+    }
+
+    .fa-moon {
+      color: pink;
+    }
+
+    .fa-sun {
+      color: yellow;
+    }
+  }
+
+  .header__burger-btn {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+
+    &:hover {
+      transform: rotate(-85deg);
+    }
+  }
+}

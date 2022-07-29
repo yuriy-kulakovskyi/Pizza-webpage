@@ -1,0 +1,19 @@
+{
+  "sliderItems": [
+    {
+      "img": "public/img/pizza.png",
+      "name": "Піца",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore",
+      "alt": "Pizza"
+    },
+
+    {
+      "img": "public/img/sushi.png",
+      "name": "Суші",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore", 
+      "alt": "Sushi"
+    },
+
+    {}
+  ]
+}

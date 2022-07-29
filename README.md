@@ -1,2 +1,1 @@
-# Pizza-webpage
- Website for pizza and sushi shop
+# Pizza and sushi web page
