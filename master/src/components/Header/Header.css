@@ -1,0 +1,58 @@
+.header {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: flex-start;
+  padding: 40px;
+  z-index: 2;
+  box-shadow: 0 0 4px #333;
+  border-radius: 10px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0; }
+  .header .light-and-dark-theme {
+    /*  target the elemenent after the label*/ }
+    .header .light-and-dark-theme .dark {
+      background-color: #292c35; }
+    .header .light-and-dark-theme .checkbox {
+      opacity: 0;
+      position: absolute; }
+    .header .light-and-dark-theme .label {
+      width: 50px;
+      height: 26px;
+      background-color: #111;
+      display: flex;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      position: relative;
+      transform: scale(1.5);
+      cursor: pointer;
+      box-shadow: 0 0 10px #CB193F; }
+    .header .light-and-dark-theme .ball {
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      border-radius: 50%;
+      transition: transform 0.2s linear; }
+    .header .light-and-dark-theme .checkbox:checked + .label .ball {
+      transform: translateX(24px); }
+    .header .light-and-dark-theme .fa-moon {
+      color: pink; }
+    .header .light-and-dark-theme .fa-sun {
+      color: yellow; }
+  .header .burger-btn {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    transition: all .6s ease-in-out; }
+    .header .burger-btn:hover {
+      transform: rotate(-90deg); }
+
+/*# sourceMappingURL=Header.css.map */
