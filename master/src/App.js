@@ -7,8 +7,9 @@ import Menu from './components/Menu/Menu';
 class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Header />
+      <div className="App background">
+        <Header
+        clickMethod = {this.Click} />
         <Menu />
         <Home />
       </div>

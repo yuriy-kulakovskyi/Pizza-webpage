@@ -8,14 +8,14 @@ class Menu extends React.Component {
     this.nameParam = "";
   }
 
-  MouseEnter = (props) => {
+  MouseEnter = props => {
     props.nameParam = props.target.outerText;
     $('#linkVal').css('opacity', '1');
     $('#linkVal').css('letter-spacing', "10px");
     $('#linkVal').text(props.nameParam);
   }
 
-  MouseLeave = (props) => {
+  MouseLeave = props => {
     props.nameParam = '';
     $('#linkVal').css('opacity', '0');
     $('#linkVal').css('letter-spacing', "100px");

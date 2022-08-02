@@ -24,6 +24,10 @@
   color: #111;
 }
 
+.transparented {
+  color: rgba(0, 0, 0, .5);
+}
+
 img {
   width: 100%; height: 100%;
 }
