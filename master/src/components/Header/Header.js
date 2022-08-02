@@ -12,7 +12,7 @@ class Header extends React.Component {
     this.opened = false;
   }
 
-  burgerClick = (e) => {
+  burgerClick = e => {
     e.preventDefault();
 
     if (!this.opened) {
@@ -26,7 +26,6 @@ class Header extends React.Component {
     }
   }
 
-
   // Light/dark theme trigger
   Click = () => {
     if (theme === "light") {
@@ -36,6 +35,8 @@ class Header extends React.Component {
       $(".transparented").css('color', "rgba(255, 255, 255, .5)");
       $(".light-wrap").css('display', 'none');
       $(".dark-wrap").css('display', 'flex');
+      $(".burger-menu").css("background-color", '#fff');
+      $(".burger-menu h1").css("color", '#111');
 
       // arrow
       $("#arrow-down").css("display", "none");
@@ -49,6 +50,8 @@ class Header extends React.Component {
       $(".transparented").css('color', "rgba(0, 0, 0, .5)");
       $(".light-wrap").css('display', 'flex');
       $(".dark-wrap").css('display', 'none');
+      $(".burger-menu").css("background-color", '#111');
+      $(".burger-menu h1").css("color", '#fff');
 
       // arrow
       $("#arrow-down").css("display", "block");
